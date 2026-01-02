@@ -13,6 +13,7 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 lerna-debug.log*
+Michael_Burbank_Cloud_Resume_Challenge.pdf
 
 # Thumbnails
 ._*
@@ -36,4 +37,3 @@ templates.html
 .env.local
 .env.*.local
 aws-exports.js
-Michael_Burbank_Cloud_Resume_Challenge.pdf
