@@ -34,6 +34,6 @@
 
 ### CI/CD (Back end)
 
-### CI/CD (Front end)
+### CI/CD (Front end) ✅
 
 ### Blog Post
