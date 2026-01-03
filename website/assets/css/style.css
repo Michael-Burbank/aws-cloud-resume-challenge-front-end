@@ -1,4 +1,79 @@
-body{
-    background-color: rgb(26, 210, 50);
-    color: white;
+*{
+    margin: 0;
+    padding: 0;
 }
+
+:root {
+    --header-color: #4F6FAD;
+    --text-color: #000000;
+    --background-color: cornsilk;
+    --container-background-color: #FFFFFF;
+    --border-color: #000000;
+}
+body{
+    background-color: var(--background-color);
+}
+/* RESUME CONTAINER */
+.resume-container{
+    width: 60%;
+    margin: 6% auto;
+    padding: 1.4rem;
+    border: .2rem solid var(--border-color);
+    background-color: var(--container-background-color);
+}
+/* END RESUME CONTAINER */
+
+/* RESUME HEADER */
+.resume-header h1{
+    text-align: center;
+    font-size: 3rem;
+    margin-top: 1.2rem;
+    color: var(--header-color);
+}
+
+aside p:first-child, aside p:nth-child(2), aside address{
+    margin: 0;
+    text-align: center;
+    margin-top: .8rem;
+}
+
+aside p:first-child{
+    font-weight: bold;
+    font-size: 1.6rem;
+    margin-top: .5rem;
+}
+
+aside p:nth-child(2){
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+aside address{
+    font-weight: normal;
+    font-style: normal;
+    font-size: 1.3rem;
+}
+
+nav ul{
+    padding: 0;
+    text-align: center;
+    margin-top: .8rem;
+}
+nav ul li{
+    display: inline;
+    margin: .8rem;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: var(--header-color);
+    font-size: 1.2rem;
+}
+
+.link-separater{
+    color: var(--text-color);
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+/* END RESUME HEADER */
+
