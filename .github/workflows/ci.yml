@@ -21,7 +21,7 @@ jobs:
                   aws-region: ${{ secrets.AWS_REGION}}
 
             - name: Sync files to S3 bucket
-              run: aws s3 sync . s3://${{ secrets.S3_BUCKET_NAME }} --exclude "*" --include "*.html" --include "assets/css/*" --include "assets/js/*" --delete
+              run: aws s3 sync . s3://${{ secrets.S3_BUCKET_NAME }} --exclude "*" --include "./website/*" --delete
 
             - name: Output website URL
               run: |
