@@ -10,6 +10,7 @@
     --container-background-color: #ffffff;
     --border-color: #000000;
     --header-font: "DM Serif Text", serif;
+    /* --secondary-font-color: #5f5e5e; */
 }
 
 body {
@@ -101,7 +102,6 @@ nav ul li a {
 
 .professional-summary h2 {
     color: var(--header-color);
-    margin-bottom: 0.3rem;
     font-family: var(--header-font);
     font-size: 1.5rem;
 }
@@ -134,7 +134,6 @@ nav ul li a {
 
 .education h2 {
     color: var(--header-color);
-    margin-bottom: 0.3rem;
     font-family: var(--header-font);
     font-size: 1.5rem;
 }
@@ -194,7 +193,6 @@ nav ul li a {
 
 .certifications h2 {
     color: var(--header-color);
-    margin-bottom: 0.3rem;
     font-family: var(--header-font);
     font-size: 1.5rem;
 }
@@ -234,7 +232,6 @@ section.technical-skills {
 
 section.technical-skills h2 {
     color: var(--header-color);
-    /* margin-bottom: 0.3rem; */
     font-family: var(--header-font);
     font-size: 1.5rem;
 }
@@ -252,3 +249,74 @@ section.technical-skills ul li {
 
 
 /* END TECHNICAL SKILLS */
+
+
+/* EXPERIENCE */
+
+section.experience {
+    margin-top: 0.5rem;
+    padding: 1rem 1rem 0 1rem;
+}
+
+section.experience h2 {
+    color: var(--header-color);
+    font-family: var(--header-font);
+    font-size: 1.5rem;
+}
+
+section.experience aside {
+    display: flex;
+    justify-content: space-between;
+    /* margin-top: 0.5rem; */
+}
+
+section.experience aside p {
+    margin-top: 0;
+    font-size: 1rem;
+    color: var(--text-color);
+}
+
+section.experience aside.tattoos-by-eder p:first-child {
+    font-weight: bold;
+    /* color: var(--secondary-font-color); */
+}
+
+section.experience aside.tattoos-by-eder p:nth-child(2) {
+    font-weight: bold;
+}
+
+section.experience aside.tattoos-by-eder-role p {
+    font-weight: normal;
+}
+
+section.experience aside.tattoos-by-eder-role p:first-child {
+    font-weight: normal;
+    /* font-style: italic; */
+}
+
+section.experience .experience-item {
+    margin-top: 0.5rem;
+    padding-left: 1rem;
+}
+
+section.experience .experience-item ul {
+    margin-top: 0.5rem;
+    list-style-type: disc;
+}
+
+section.experience .experience-item ul li {
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    color: var(--text-color);
+}
+
+.independent-software-consultant .company-name p {
+    font-weight: bold;
+}
+
+.independent-software-consultant .company-role p {
+    font-weight: normal;
+}
+
+
+/* END EXPERIENCE */
