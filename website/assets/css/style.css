@@ -171,3 +171,36 @@ nav ul li a {
 }
 
 /* END EDUCATION */
+
+/* CERTIFICATIONS */
+.certifications {
+    margin-top: 0.5rem;
+    padding: 1rem 1rem 0 1rem;
+}
+.certifications h2 {
+    color: var(--header-color);
+    margin-bottom: 0.3rem;
+    font-family: var(--header-font);
+    font-size: 1.5rem;
+}
+.certifications .certification-list li {
+    list-style-type: none;
+    margin-top: 0.5rem;
+}
+
+.certifications .certification-list {
+    margin-top: 0.5rem;
+}
+.certifications .certification-list aside {
+    /* font-weight: bold; */
+    /* text-decoration: underline; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.certifications .certification-list aside p{
+    font-size: 1rem;
+    margin-top: 0.5rem;
+    font-weight: bold;
+}
+/* END CERTIFICATIONS */
