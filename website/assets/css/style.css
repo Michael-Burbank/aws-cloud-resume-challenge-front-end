@@ -1,134 +1,173 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
 :root {
-    --header-color: #4F6FAD;
+    --header-color: #4f6fad;
     --text-color: #000000;
     --background-color: cornsilk;
-    --container-background-color: #FFFFFF;
+    --container-background-color: #ffffff;
     --border-color: #000000;
-    --header-font: 'DM Serif Text', serif;
+    --header-font: "DM Serif Text", serif;
 }
-body{
+
+body {
     background-color: var(--background-color);
 }
+
 /* RESUME CONTAINER */
-.resume-container{
+.resume-container {
     width: 60%;
     margin: 6% auto;
     padding: 1.4rem;
-    border: .2rem solid var(--border-color);
+    border: 0.2rem solid var(--border-color);
     background-color: var(--container-background-color);
 }
+
 /* END RESUME CONTAINER */
 
 /* RESUME HEADER */
-.resume-header h1{
+.resume-header h1 {
     text-align: center;
     font-size: 3rem;
     margin-top: 1.2rem;
     color: var(--header-color);
 }
 
-aside p:first-child, aside p:nth-child(2), aside address{
+aside p:first-child,
+aside p:nth-child(2),
+aside address {
     margin: 0;
     text-align: center;
-    margin-top: .8rem;
+    margin-top: 0.8rem;
 }
 
-aside p:first-child{
+aside p:first-child {
     font-weight: bold;
     font-size: 1.6rem;
-    margin-top: .5rem;
+    margin-top: 0.5rem;
 }
 
-aside p:nth-child(2){
+aside p:nth-child(2) {
     font-weight: bold;
     font-size: 1.2rem;
 }
 
-aside address{
+aside address {
     font-weight: normal;
     font-style: normal;
     font-size: 1.3rem;
 }
 
-nav ul{
+nav ul {
     padding: 0;
     text-align: center;
-    margin-top: .8rem;
-}
-nav ul li{
-    display: inline;
-    margin: .8rem;
+    margin-top: 0.8rem;
 }
 
-nav ul li a{
+nav ul li {
+    display: inline;
+    margin: 0.8rem;
+}
+
+nav ul li a {
     text-decoration: none;
     color: var(--header-color);
     font-size: 1.2rem;
 }
 
-.link-separater{
+.link-separater {
     color: var(--text-color);
     font-weight: bold;
     font-size: 1.2rem;
 }
+
 /* END RESUME HEADER */
 
 /* PROFESSIONAL SUMMARY */
-.professional-summary{
+.professional-summary {
     margin-top: 1rem;
     padding: 1rem 1rem 0 1rem;
 }
 
-.professional-summary h2{
+.professional-summary h2 {
     color: var(--header-color);
-    margin-bottom: .3rem;
+    margin-bottom: 0.3rem;
     font-family: var(--header-font);
     font-size: 1.5rem;
 }
 
-.hr-line{
+.hr-line {
     border: none;
-    height: .2rem;
+    height: 0.2rem;
     background-color: var(--border-color);
-    margin-bottom: .8rem;
+    margin-bottom: 0.8rem;
 }
 
-.professional-summary p{
-    margin-top: .5rem;
+.professional-summary p {
+    margin-top: 0.5rem;
     line-height: 1.2rem;
     font-size: 1rem;
     color: var(--text-color);
     word-wrap: normal;
 }
+
 /* END PROFESSIONAL SUMMARY */
 
 /* EDUCATION SECTION */
-.education{
-    margin-top: .5rem;
-    padding: .5rem;
+.education {
+    margin-top: 0.5rem;
+    padding: 1rem 1rem 0 1rem;
 }
 
-.education h2{
+.education h2 {
     color: var(--header-color);
-    margin-bottom: .3rem;
+    margin-bottom: 0.3rem;
     font-family: var(--header-font);
     font-size: 1.5rem;
 }
 
-.education aside p, .education address{
-    margin: 0;
-    margin-top: .3rem;
+.education aside p,
+.education-address {
+    margin-top: 0rem;
     font-size: 1rem;
     color: var(--text-color);
-    display: inline;
 }
-.education .education-address{
-    /* text-align: right; */
-    justify-content: flex-end;
+
+.education aside {
+    display: flex;
+    justify-content: space-between;
 }
+
+.education .education-aside .education-address {
+    font-weight: normal;
+}
+
+.education-aside p:first-child {
+    text-transform: uppercase;
+}
+
+.education .bachelor-degree p:first-child {
+    margin-top: 0.5rem;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.education .bachelor-degree p:nth-child(2) {
+    margin-top: 0.5rem;
+    font-size: 1rem;
+}
+
+.education .associate-degree p:first-child {
+    margin-top: 0.5rem;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.education .associate-degree p:nth-child(2) {
+    margin-top: 0.5rem;
+    font-size: 1rem;
+}
+
 /* END EDUCATION */
