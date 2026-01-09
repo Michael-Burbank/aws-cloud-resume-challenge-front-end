@@ -158,24 +158,34 @@ nav ul li a {
     text-transform: uppercase;
 }
 
-.education .bachelor-degree p:first-child {
+.education .bachelor-degree .degree-info p:first-child {
     margin-top: 0.5rem;
     font-weight: bold;
     text-decoration: underline;
 }
 
-.education .bachelor-degree p:nth-child(2) {
+.education .bachelor-degree .degree-info p:nth-child(2) {
+    margin-top: 0.2rem;
+    font-size: 1rem;
+}
+
+.education .bachelor-degree .degree-date {
     margin-top: 0.5rem;
     font-size: 1rem;
 }
 
-.education .associate-degree p:first-child {
+.education .associate-degree .degree-info p:first-child {
     margin-top: 0.5rem;
     font-weight: bold;
     text-decoration: underline;
 }
 
-.education .associate-degree p:nth-child(2) {
+.education .associate-degree .degree-info p:nth-child(2) {
+    margin-top: 0.2rem;
+    font-size: 1rem;
+}
+
+.education .associate-degree .degree-date {
     margin-top: 0.5rem;
     font-size: 1rem;
 }
@@ -417,7 +427,7 @@ section.project-highlights aside p {
 section.project-highlights .daily-learning-journal-project aside p a {
     color: var(--header-color);
     text-decoration: none;
-    padding-left: 0.5rem;
+    padding-left: 0;
 }
 
 section.project-highlights .daily-learning-journal-project ul {
@@ -464,7 +474,7 @@ section.project-highlights aside p {
 section.project-highlights .tattoos-by-eder-project aside p a {
     color: var(--header-color);
     text-decoration: none;
-    padding-left: 0.5rem;
+    padding-left: 0;
 }
 
 section.project-highlights .tattoos-by-eder-project ul {
@@ -484,3 +494,132 @@ section.project-highlights .tattoos-by-eder-project ul {
 
 
 /* END PROJECT HIGHLIGHTS */
+
+
+/* RESPONSIVE: MOBILE */
+
+@media (max-width: 600px) {
+    .resume-container {
+        width: 80%;
+        margin: 4% auto;
+        padding: 1rem;
+        border-width: 0.1rem;
+    }
+    .resume-header h1 {
+        font-size: 2rem;
+        margin-top: 0.8rem;
+    }
+    aside p:first-child {
+        font-size: 1.2rem;
+    }
+    aside p:nth-child(2),
+    aside address {
+        font-size: 1rem;
+    }
+    nav ul {
+        margin-top: 0.5rem;
+    }
+    nav ul li {
+        display: inline;
+        margin: 0.4rem 0;
+        padding: 0.5rem;
+    }
+    .link-separater {
+        display: none;
+    }
+    .bachelor-education aside:nth-child(1) p:nth-child(2) {
+        font-size: 1rem;
+    }
+    .bachelor-education .bachelor-degree .degree-info p:first-child,
+    .associate-education .associate-degree .degree-info p:first-child {
+        font-size: 1rem;
+        margin-top: 0;
+    }
+    .bachelor-education .bachelor-degree .degree-date,
+    .associate-education .associate-degree .degree-date {
+        font-size: 1rem;
+        align-self: flex-end;
+        margin-top: 0;
+    }
+    /* Reset margins for tighter mobile spacing in education */
+    .education aside p,
+    .education .degree-info p {
+        margin-top: 0.1rem;
+    }
+    .education .bachelor-degree .degree-info p:first-child,
+    .education .associate-degree .degree-info p:first-child {
+        margin-top: 0;
+    }
+    .professional-summary,
+    .education,
+    .certifications,
+    section.technical-skills,
+    section.experience,
+    .project-highlights {
+        padding: 0.75rem;
+    }
+    .hr-line {
+        margin-bottom: 0.6rem;
+        height: 0.15rem;
+    }
+    /* Stack asides vertically for narrow screens */
+    .education aside,
+    .certifications .certification-list aside,
+    section.experience aside,
+    .project-highlights .crc-project aside,
+    .project-highlights .daily-learning-journal-project aside,
+    .project-highlights .tattoos-by-eder-project aside {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.25rem;
+    }
+    .education aside.education-aside p:first-child {
+        align-self: center;
+    }
+    .experience .experience-item {
+        padding-left: 0;
+    }
+    section.experience .experience-item ul,
+    .project-highlights .crc-project ul,
+    .project-highlights .daily-learning-journal-project ul,
+    .project-highlights .tattoos-by-eder-project ul {
+        padding-left: 1rem;
+    }
+    /* Tweak link sizes for touch targets */
+    nav ul li a {
+        font-size: 1rem;
+    }
+    /* Header content: ensure clean wrapping and sizing */
+    .resume-header .about-content {
+        padding: 0 0.75rem;
+    }
+    .resume-header .about-content p {
+        line-height: 1.3rem;
+        overflow-wrap: anywhere;
+        word-break: break-word;
+        hyphens: auto;
+        white-space: normal;
+    }
+    .resume-header .about-content .tagline {
+        font-size: 1.05rem;
+        font-weight: 600;
+    }
+    .resume-header .about-content .veteran-preferences {
+        font-size: 0.95rem;
+    }
+    /* Techstack lines readability */
+    .project-highlights .daily-learning-journal-project aside.daily-learning-journal-techstack p,
+    .project-highlights .tattoos-by-eder-project aside.tattoos-by-eder-techstack p {
+        font-size: 0.9rem;
+    }
+    /* Project URLs: place on their own line and allow wrapping */
+    .project-highlights .crc-project aside p a,
+    .project-highlights .daily-learning-journal-project aside p a,
+    .project-highlights .tattoos-by-eder-project aside p a {
+        display: block;
+        margin-top: 0.25rem;
+        overflow-wrap: anywhere;
+        word-break: break-word;
+        line-height: 1.3rem;
+    }
+}
