@@ -498,6 +498,40 @@ section.project-highlights .tattoos-by-eder-project ul {
 /* END PROJECT HIGHLIGHTS */
 
 
+/* --------VISITOR COUNT------- */
+
+section.visitor-count-container {
+    position: fixed;
+    /* Pin to viewport */
+    left: 2.2rem;
+    /* Stick to left edge */
+    top: 50%;
+    /* Vertically center */
+    transform: translateY(-50%);
+    width: 15%;
+    z-index: 1000;
+    /* Stay above content */
+    text-align: center;
+    background-color: violet;
+}
+
+section.visitor-count-section {
+    padding: 1rem;
+    border: 0.2rem solid var(--border-color);
+    background-color: #7196df;
+    position: static;
+    height: auto;
+}
+
+section.visitor-count-section aside .visitor-count {
+    font-family: var(--header-font);
+    font-size: 1.4rem;
+}
+
+
+/* --------END VISITOR COUNT------- */
+
+
 /* RESPONSIVE: MOBILE */
 
 @media (max-width: 600px) {
@@ -623,5 +657,12 @@ section.project-highlights .tattoos-by-eder-project ul {
         overflow-wrap: anywhere;
         word-break: break-word;
         line-height: 1.3rem;
+    }
+    /* Visitor count: avoid overlapping on mobile */
+    section.visitor-count-container {
+        top: 1rem;
+        /* Top-left on small screens */
+        transform: none;
+        width: 60%;
     }
 }
