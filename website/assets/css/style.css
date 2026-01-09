@@ -143,6 +143,8 @@ nav ul li a {
     margin-top: 0rem;
     font-size: 1rem;
     color: var(--text-color);
+    text-align: left;
+    /* Override global aside centering for education */
 }
 
 .education aside {
