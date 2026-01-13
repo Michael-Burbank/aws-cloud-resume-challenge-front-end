@@ -37,3 +37,6 @@ templates.html
 .env.local
 .env.*.local
 aws-exports.js
+tips.md
+env.production.json
+website/assets/js/config.js
