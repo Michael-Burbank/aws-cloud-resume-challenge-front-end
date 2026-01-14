@@ -548,6 +548,11 @@ section.visitor-count-section aside .visitor-label {
     letter-spacing: 0.03em;
 }
 
+    footer.resume-footer {
+        background-color: var(--header-color);
+        font-size: 0.8rem;
+        padding: 3rem 0.5rem 3rem 0.5rem;
+    }
 
 /* --------END VISITOR COUNT------- */
 
@@ -578,6 +583,11 @@ section.visitor-count-section aside .visitor-label {
     aside address {
         font-size: 1rem;
     }
+    .project-highlights p:first-child,
+    .project-highlights p:nth-child(2) {
+    text-align: left;
+    }
+
     nav ul {
         margin-top: 0.5rem;
     }
