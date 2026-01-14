@@ -144,7 +144,6 @@ nav ul li a {
     font-size: 1rem;
     color: var(--text-color);
     text-align: left;
-    /* Override global aside centering for education */
 }
 
 .education aside {
@@ -162,13 +161,14 @@ nav ul li a {
 
 .education .bachelor-degree .degree-info p:first-child {
     margin-top: 0.5rem;
-    font-weight: bold;
-    text-decoration: underline;
+    /* font-weight: bold; */
+    /* text-decoration: underline; */
 }
 
 .education .bachelor-degree .degree-info p:nth-child(2) {
     margin-top: 0.2rem;
     font-size: 1rem;
+    font-weight: normal;
 }
 
 .education .bachelor-degree .degree-date {
@@ -178,13 +178,14 @@ nav ul li a {
 
 .education .associate-degree .degree-info p:first-child {
     margin-top: 0.5rem;
-    font-weight: bold;
-    text-decoration: underline;
+    /* font-weight: bold; */
+    /* text-decoration: underline; */
 }
 
 .education .associate-degree .degree-info p:nth-child(2) {
     margin-top: 0.2rem;
     font-size: 1rem;
+    font-weight: normal;
 }
 
 .education .associate-degree .degree-date {
@@ -500,32 +501,51 @@ section.project-highlights .tattoos-by-eder-project ul {
 
 /* --------VISITOR COUNT------- */
 
+
 section.visitor-count-container {
     position: fixed;
-    /* Pin to viewport */
-    left: 2.2rem;
-    /* Stick to left edge */
-    top: 50%;
-    /* Vertically center */
-    transform: translateY(-50%);
-    width: 15%;
+    right: 2.2rem;
+    bottom: 2.2rem;
+    left: auto;
+    top: auto;
+    transform: none;
+    width: 260px;
+    max-width: 90vw;
     z-index: 1000;
-    /* Stay above content */
     text-align: center;
-    background-color: violet;
+    background: rgba(113, 150, 223, 0.95);
+    border-radius: 1.2rem;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.10);
+    padding: 0.5rem 0.5rem 0.2rem 0.5rem;
+    border: 0.15rem solid var(--border-color);
+    transition: right 0.3s, bottom 0.3s, width 0.3s;
 }
 
+
 section.visitor-count-section {
-    padding: 1rem;
-    border: 0.2rem solid var(--border-color);
-    background-color: #7196df;
+    padding: 0.7rem 0.5rem 0.5rem 0.5rem;
+    background: none;
+    border: none;
     position: static;
     height: auto;
 }
 
+
 section.visitor-count-section aside .visitor-count {
     font-family: var(--header-font);
-    font-size: 1.4rem;
+    font-size: 1.5rem;
+    color: #fff;
+    letter-spacing: 0.05em;
+    text-shadow: 0 1px 4px rgba(0,0,0,0.12);
+}
+
+section.visitor-count-section aside .visitor-label {
+    font-size: 1rem;
+    color: #f3f3f3;
+    margin-bottom: 0.2rem;
+    display: block;
+    font-weight: 500;
+    letter-spacing: 0.03em;
 }
 
 
@@ -535,6 +555,12 @@ section.visitor-count-section aside .visitor-count {
 /* RESPONSIVE: MOBILE */
 
 @media (max-width: 600px) {
+    /* Align education address right on mobile */
+    .education .education-address {
+        text-align: right;
+        width: 100%;
+        display: block;
+    }
     .resume-container {
         width: 80%;
         margin: 4% auto;
@@ -565,6 +591,14 @@ section.visitor-count-section aside .visitor-count {
     }
     .bachelor-education aside:nth-child(1) p:nth-child(2) {
         font-size: 1rem;
+        margin-top: 0.5rem;
+    }
+    .bachelor-education .bachelor-degree,
+    .associate-education .associate-degree {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.1rem;
     }
     .bachelor-education .bachelor-degree .degree-info p:first-child,
     .associate-education .associate-degree .degree-info p:first-child {
@@ -574,8 +608,8 @@ section.visitor-count-section aside .visitor-count {
     .bachelor-education .bachelor-degree .degree-date,
     .associate-education .associate-degree .degree-date {
         font-size: 1rem;
+        margin-top: 0rem;
         align-self: flex-end;
-        margin-top: 0;
     }
     /* Reset margins for tighter mobile spacing in education */
     .education aside p,
@@ -658,11 +692,24 @@ section.visitor-count-section aside .visitor-count {
         word-break: break-word;
         line-height: 1.3rem;
     }
-    /* Visitor count: avoid overlapping on mobile */
+    /* Visitor count: bottom center, full width, mobile friendly */
     section.visitor-count-container {
-        top: 1rem;
-        /* Top-left on small screens */
-        transform: none;
-        width: 60%;
+        left: 50%;
+        right: auto;
+        bottom: 1.2rem;
+        top: auto;
+        transform: translateX(-50%);
+        width: 95vw;
+        max-width: 99vw;
+        border-radius: 0.8rem;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+        padding: 0.5rem 0.2rem 0.2rem 0.2rem;
+    }
+    /* Force right alignment for degree-field (Software Development) on mobile */
+    .degree-field {
+        text-align: right !important;
+        width: 100%;
+        display: block;
+        font-weight: normal !important;
     }
 }
