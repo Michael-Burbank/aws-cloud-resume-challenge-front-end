@@ -789,17 +789,26 @@ section.visitor-count-section aside .visitor-label {
     .link-separater {
         display: none;
     }
-    .bachelor-education aside:nth-child(1) p:nth-child(2) {
+    .bachelor-education aside:nth-child(1) p:first-child {
         font-size: 1rem;
+        align-self: flex-start;
         margin-top: 0.5rem;
     }
+    .bachelor-education aside:nth-child(1) p:nth-child(2) {
+        font-size: 0.95rem;
+        margin-top: 0.2rem;
+        font-style: italic;
+    }
+
     .bachelor-education .bachelor-degree,
     .associate-education .associate-degree {
         display: flex;
-        flex-direction: column;
-        align-items: flex-start;
+        flex-direction: row;
+        justify-content: flex-center;
         gap: 0.1rem;
+        margin-top: 1rem;
     }
+
     .bachelor-education .bachelor-degree .degree-info p:first-child,
     .associate-education .associate-degree .degree-info p:first-child {
         font-size: 1rem;
@@ -809,7 +818,7 @@ section.visitor-count-section aside .visitor-label {
     .associate-education .associate-degree .degree-date {
         font-size: 1rem;
         margin-top: 0rem;
-        align-self: flex-end;
+        /* align-self: flex-end; */
     }
     /* Reset margins for tighter mobile spacing in education */
     .education aside p,
