@@ -220,6 +220,7 @@ nav ul li a {
 
 .certifications .certification-list li:first-child {
     margin-top: 0.3rem;
+    font-weight: bold;
 }
 
 .certifications .certification-list {
@@ -521,7 +522,7 @@ section.visitor-count-container {
     text-align: center;
     background: rgba(113, 150, 223, 0.95);
     border-radius: 1.2rem;
-    box-shadow: 0 4px 16px rgba(0,0,0,0.10);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.10);
     padding: 0.5rem 0.5rem 0.2rem 0.5rem;
     border: 0.15rem solid var(--border-color);
     transition: right 0.3s, bottom 0.3s, width 0.3s;
@@ -542,7 +543,7 @@ section.visitor-count-section aside .visitor-count {
     font-size: 1.5rem;
     color: #fff;
     letter-spacing: 0.05em;
-    text-shadow: 0 1px 4px rgba(0,0,0,0.12);
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.12);
 }
 
 section.visitor-count-section aside .visitor-label {
@@ -554,11 +555,11 @@ section.visitor-count-section aside .visitor-label {
     letter-spacing: 0.03em;
 }
 
-    footer.resume-footer {
-        background-color: var(--header-color);
-        font-size: 0.8rem;
-        padding: 3rem 0.5rem 3rem 0.5rem;
-    }
+footer.resume-footer {
+    background-color: var(--header-color);
+    font-size: 0.8rem;
+    padding: 3rem 0.5rem 3rem 0.5rem;
+}
 
 /* --------END VISITOR COUNT------- */
 
@@ -566,59 +567,71 @@ section.visitor-count-section aside .visitor-label {
 /* RESPONSIVE: MOBILE */
 
 @media (max-width: 600px) {
+
     /* Align education address right on mobile */
     .education .education-address {
         text-align: right;
         width: 100%;
         display: block;
     }
+
     .resume-container {
         width: 80%;
         margin: 4% auto;
         padding: 1rem;
         border-width: 0.1rem;
     }
+
     .resume-header h1 {
         font-size: 2rem;
         margin-top: 0.8rem;
     }
+
     aside p:first-child {
         font-size: 1.2rem;
     }
+
     aside p:nth-child(2),
     aside address {
         font-size: 1rem;
     }
+
     aside address {
         font-size: 1rem;
         margin-top: 0.4rem;
     }
+
     .project-highlights p:first-child,
     .project-highlights p:nth-child(2) {
-    text-align: left;
+        text-align: left;
     }
 
     nav ul {
         margin-top: 0.5rem;
     }
+
     nav ul li {
         display: inline;
         margin: 0.4rem 0;
         padding: 0.5rem;
     }
+
     .link-separater {
         display: none;
     }
+
     .bachelor-education aside:nth-child(1) p:first-child {
         font-size: 0.86rem;
         align-self: flex-start;
         margin-top: 0.5rem;
     }
+
     .bachelor-education aside:nth-child(1) p:nth-child(2) {
         font-size: 0.88rem;
         margin-top: 0.2rem;
         font-style: italic;
     }
+
     .bachelor-education .bachelor-degree,
     .associate-education .associate-degree {
         display: flex;
@@ -636,11 +649,13 @@ section.visitor-count-section aside .visitor-label {
         gap: 0.5rem;
         margin-top: 1rem;
     }
+
     .certifications .certification-list aside li {
         font-size: 1rem;
         margin: 0;
         font-weight: normal;
     }
+
     .certifications .certification-list aside p {
         font-size: 0.95rem;
         margin: 0;
@@ -651,20 +666,24 @@ section.visitor-count-section aside .visitor-label {
         font-size: 1rem;
         margin-top: 0;
     }
+
     .bachelor-education .bachelor-degree .degree-date,
     .associate-education .associate-degree p.degree-date {
         font-size: 1rem;
         margin-top: 0rem;
     }
+
     /* Reset margins for tighter mobile spacing in education */
     .education aside p,
     .education .degree-info p {
         margin-top: 1rem;
     }
+
     .education .bachelor-degree .degree-info p:first-child,
     .education .associate-degree .degree-info p:first-child {
         margin-top: 0;
     }
+
     .professional-summary,
     .education,
     .certifications,
@@ -673,11 +692,12 @@ section.visitor-count-section aside .visitor-label {
     .project-highlights {
         padding: 0.75rem;
     }
-    
+
     .hr-line {
         margin-bottom: 0.6rem;
         height: 0.15rem;
     }
+
     /* Stack asides vertically for narrow screens */
     .education aside,
     section.experience aside,
@@ -688,29 +708,36 @@ section.visitor-count-section aside .visitor-label {
         align-items: flex-start;
         gap: 0.25rem;
     }
+
     .certifications .certification-list aside {
         margin-top: 0.5rem;
     }
+
     .education aside.education-aside p:first-child {
         align-self: left;
     }
+
     .experience .experience-item {
         padding-left: 0;
     }
+
     section.experience .experience-item ul,
     .project-highlights .crc-project ul,
     .project-highlights .daily-learning-journal-project ul,
     .project-highlights .tattoos-by-eder-project ul {
         padding-left: 1rem;
     }
+
     /* Tweak link sizes for touch targets */
     nav ul li a {
         font-size: 1rem;
     }
+
     /* Header content: ensure clean wrapping and sizing */
     .resume-header .about-content {
         padding: 0 0.75rem;
     }
+
     .resume-header .about-content p {
         line-height: 1.3rem;
         overflow-wrap: anywhere;
@@ -718,18 +745,22 @@ section.visitor-count-section aside .visitor-label {
         hyphens: auto;
         white-space: normal;
     }
+
     .resume-header .about-content .tagline {
         font-size: 1.05rem;
         font-weight: 600;
     }
+
     .resume-header .about-content .veteran-preferences {
         font-size: 0.95rem;
     }
+
     /* Techstack lines readability */
     .project-highlights .daily-learning-journal-project aside.daily-learning-journal-techstack p,
     .project-highlights .tattoos-by-eder-project aside.tattoos-by-eder-techstack p {
         font-size: 0.9rem;
     }
+
     /* Project URLs: place on their own line and allow wrapping */
     .project-highlights .crc-project aside p a,
     .project-highlights .daily-learning-journal-project aside p a,
@@ -740,6 +771,7 @@ section.visitor-count-section aside .visitor-label {
         word-break: break-word;
         line-height: 1.3rem;
     }
+
     /* Visitor count: bottom center, full width, mobile friendly */
     section.visitor-count-container {
         left: 50%;
@@ -750,63 +782,73 @@ section.visitor-count-section aside .visitor-label {
         width: 95vw;
         max-width: 99vw;
         border-radius: 0.8rem;
-        box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.10);
         padding: 0.5rem 0.2rem 0.2rem 0.2rem;
     }
 
-     /* Footer */
+    /* Footer */
     footer.resume-footer {
         font-size: 0.8rem;
         padding: 2rem 0.5rem 9rem 0.5rem;
-}
+    }
 }
 
 @media (min-width: 600px) and (max-width: 900px) {
+
     /* Align education address right on mobile */
     .education .education-address {
         text-align: right;
         width: 100%;
         display: block;
     }
+
     .resume-container {
         width: 80%;
         margin: 4% auto;
         padding: 1rem;
         border-width: 0.1rem;
     }
+
     .resume-header h1 {
         font-size: 2rem;
         margin-top: 0.8rem;
     }
+
     aside p:first-child {
         font-size: 1.2rem;
     }
+
     aside p:nth-child(2),
     aside address {
         font-size: 1rem;
         margin-top: 0.4rem;
     }
+
     .project-highlights p:first-child,
     .project-highlights p:nth-child(2) {
-    text-align: left;
+        text-align: left;
     }
 
     nav ul {
         margin-top: 0.5rem;
     }
+
     nav ul li {
         display: inline;
         margin: 0.4rem 0;
         padding: 0.5rem;
     }
+
     .link-separater {
         display: none;
     }
+
     .bachelor-education aside:nth-child(1) p:first-child {
         font-size: 1rem;
         align-self: flex-start;
         margin-top: 0.5rem;
     }
+
     .bachelor-education aside:nth-child(1) p:nth-child(2) {
         font-size: 0.95rem;
         margin-top: 0.2rem;
@@ -828,21 +870,25 @@ section.visitor-count-section aside .visitor-label {
         font-size: 1rem;
         margin-top: 0;
     }
+
     .bachelor-education .bachelor-degree .degree-date,
     .associate-education .associate-degree .degree-date {
         font-size: 0.95rem;
         margin-top: 0rem;
         /* align-self: flex-end; */
     }
+
     /* Reset margins for tighter mobile spacing in education */
     .education aside p,
     .education .degree-info p {
         margin-top: 0.1rem;
     }
+
     .education .bachelor-degree .degree-info p:first-child,
     .education .associate-degree .degree-info p:first-child {
         margin-top: 0;
     }
+
     .professional-summary,
     .education,
     .certifications,
@@ -850,12 +896,15 @@ section.visitor-count-section aside .visitor-label {
     section.experience,
     .project-highlights {
         padding: 0.75rem;
-        margin-top: 0;;
+        margin-top: 0;
+        ;
     }
+
     .hr-line {
         margin-bottom: 0.6rem;
         height: 0.15rem;
     }
+
     /* Stack asides vertically for narrow screens */
     .education aside,
     .certifications .certification-list aside,
@@ -867,9 +916,11 @@ section.visitor-count-section aside .visitor-label {
         align-items: flex-start;
         gap: 0.25rem;
     }
+
     .education aside.education-aside p:first-child {
         align-self: center;
     }
+
     .experience .experience-item {
         padding-left: 0;
     }
@@ -882,9 +933,11 @@ section.visitor-count-section aside .visitor-label {
         font-weight: normal;
         padding-bottom: 0.5rem;
     }
-    .certifications .certification-list aside:last-child{
+
+    .certifications .certification-list aside:last-child {
         padding-bottom: 0;
     }
+
     .certifications .certification-list aside p {
         font-size: 0.95rem;
         margin-top: 0.3rem;
@@ -900,14 +953,17 @@ section.visitor-count-section aside .visitor-label {
     .project-highlights .tattoos-by-eder-project ul {
         padding-left: 1rem;
     }
+
     /* Tweak link sizes for touch targets */
     nav ul li a {
         font-size: 1rem;
     }
+
     /* Header content: ensure clean wrapping and sizing */
     .resume-header .about-content {
         padding: 0 0.75rem;
     }
+
     .resume-header .about-content p {
         line-height: 1.3rem;
         overflow-wrap: anywhere;
@@ -915,18 +971,22 @@ section.visitor-count-section aside .visitor-label {
         hyphens: auto;
         white-space: normal;
     }
+
     .resume-header .about-content .tagline {
         font-size: 1.05rem;
         font-weight: 600;
     }
+
     .resume-header .about-content .veteran-preferences {
         font-size: 0.95rem;
     }
+
     /* Techstack lines readability */
     .project-highlights .daily-learning-journal-project aside.daily-learning-journal-techstack p,
     .project-highlights .tattoos-by-eder-project aside.tattoos-by-eder-techstack p {
         font-size: 0.9rem;
     }
+
     /* Project URLs: place on their own line and allow wrapping */
     .project-highlights .crc-project aside p a,
     .project-highlights .daily-learning-journal-project aside p a,
@@ -937,6 +997,7 @@ section.visitor-count-section aside .visitor-label {
         word-break: break-word;
         line-height: 1.3rem;
     }
+
     /* Visitor count: bottom center, full width, mobile friendly */
     section.visitor-count-container {
         left: 50%;
@@ -947,62 +1008,73 @@ section.visitor-count-section aside .visitor-label {
         width: 95vw;
         max-width: 99vw;
         border-radius: 0.8rem;
-        box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.10);
         padding: 0.5rem 0.2rem 0.2rem 0.2rem;
     }
-     /* Footer */
+
+    /* Footer */
     footer.resume-footer {
         font-size: 0.8rem;
         padding: 2rem 0.5rem 9rem 0.5rem;
-}
+    }
 }
 
 @media (min-width: 901px) and (max-width: 1100px) {
     .resume-header h1 {
         font-size: 2.5rem;
     }
+
     .resume-container {
         width: 80%;
         margin: 4% auto;
         padding: 1rem;
         border-width: 0.1rem;
     }
+
     .education .education-address {
         text-align: right;
         width: 100%;
         display: block;
     }
+
     aside p:first-child {
         font-size: 1.2rem;
     }
+
     aside p:nth-child(2),
     aside address {
         font-size: 1rem;
     }
+
     aside address {
         font-size: 1rem;
         margin-top: 0.5rem;
     }
+
     .project-highlights p:first-child,
     .project-highlights p:nth-child(2) {
-    text-align: left;
+        text-align: left;
     }
 
     nav ul {
         margin-top: 0.5rem;
     }
+
     nav ul li {
         display: inline;
         margin: 0.4rem 0;
         padding: 0.5rem;
     }
+
     .link-separater {
         display: none;
     }
+
     .bachelor-education aside:nth-child(1) p:first-child {
         font-size: 1rem;
         margin-top: 0.5rem;
     }
+
     .bachelor-education aside:nth-child(1) p:nth-child(2) {
         font-size: 0.95rem;
         margin-top: 0.2rem;
@@ -1029,21 +1101,25 @@ section.visitor-count-section aside .visitor-label {
         font-size: 1rem;
         margin-top: 0;
     }
+
     .bachelor-education .bachelor-degree .degree-date,
     .associate-education .associate-degree .degree-date {
         font-size: 0.95rem;
         margin-top: 0rem;
         /* align-self: flex-end; */
     }
+
     /* Reset margins for tighter mobile spacing in education */
     .education aside p,
     .education .degree-info p {
         margin-top: 0.1rem;
     }
+
     .education .bachelor-degree .degree-info p:first-child,
     .education .associate-degree .degree-info p:first-child {
         margin-top: 0;
     }
+
     .professional-summary,
     .education,
     .certifications,
@@ -1052,10 +1128,12 @@ section.visitor-count-section aside .visitor-label {
     .project-highlights {
         padding: 0.75rem;
     }
+
     .hr-line {
         margin-bottom: 0.6rem;
         height: 0.15rem;
     }
+
     /* Stack asides vertically for narrow screens */
     .education aside,
     .certifications .certification-list aside,
@@ -1067,10 +1145,12 @@ section.visitor-count-section aside .visitor-label {
         align-items: flex-start;
         gap: 0.25rem;
     }
+
     .education aside.education-aside p:first-child {
         align-self: center;
         font-size: 1.2rem;
     }
+
     .experience .experience-item {
         padding-left: 0;
     }
@@ -1083,9 +1163,11 @@ section.visitor-count-section aside .visitor-label {
         font-weight: normal;
         padding-bottom: 0.5rem;
     }
-    .certifications .certification-list aside:last-child{
+
+    .certifications .certification-list aside:last-child {
         padding-bottom: 0;
     }
+
     .certifications .certification-list aside p {
         font-size: 0.95rem;
         margin-top: 0.3rem;
@@ -1097,14 +1179,17 @@ section.visitor-count-section aside .visitor-label {
     .project-highlights .tattoos-by-eder-project ul {
         padding-left: 1rem;
     }
+
     /* Tweak link sizes for touch targets */
     nav ul li a {
         font-size: 1rem;
     }
+
     /* Header content: ensure clean wrapping and sizing */
     .resume-header .about-content {
         padding: 0 0.75rem;
     }
+
     .resume-header .about-content p {
         line-height: 1.3rem;
         overflow-wrap: anywhere;
@@ -1112,18 +1197,22 @@ section.visitor-count-section aside .visitor-label {
         hyphens: auto;
         white-space: normal;
     }
+
     .resume-header .about-content .tagline {
         font-size: 1.05rem;
         font-weight: 600;
     }
+
     .resume-header .about-content .veteran-preferences {
         font-size: 0.95rem;
     }
+
     /* Techstack lines readability */
     .project-highlights .daily-learning-journal-project aside.daily-learning-journal-techstack p,
     .project-highlights .tattoos-by-eder-project aside.tattoos-by-eder-techstack p {
         font-size: 0.9rem;
     }
+
     /* Project URLs: place on their own line and allow wrapping */
     .project-highlights .crc-project aside p a,
     .project-highlights .daily-learning-journal-project aside p a,
@@ -1134,6 +1223,7 @@ section.visitor-count-section aside .visitor-label {
         word-break: break-word;
         line-height: 1.3rem;
     }
+
     /* Visitor count: bottom center, full width, mobile friendly */
     section.visitor-count-container {
         left: 50%;
@@ -1141,69 +1231,322 @@ section.visitor-count-section aside .visitor-label {
         bottom: 1.2rem;
         top: auto;
         transform: translateX(-50%);
-        width: 95vw;
+        width: 56vw;
         max-width: 99vw;
         border-radius: 0.8rem;
-        box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.10);
         padding: 0.5rem 0.2rem 0.2rem 0.2rem;
     }
-     /* Footer */
+
+    /* Footer */
     footer.resume-footer {
         font-size: 0.8rem;
         padding: 2rem 0.5rem 9rem 0.5rem;
-}
+    }
 }
 
 @media (min-width: 1101px) and (max-width: 1300px) {
     .resume-header h1 {
         font-size: 3rem;
     }
+
     .resume-container {
         width: 80%;
         margin: 4% auto;
         padding: 1rem;
         border-width: 0.1rem;
     }
-    section.education, section.experience, section.project-highlights{
+
+    section.education,
+    section.experience,
+    section.project-highlights {
         margin-top: 0;
     }
+
     .education .education-address {
         text-align: right;
         width: 100%;
         display: block;
     }
+
     aside p:first-child {
         font-size: 1.2rem;
     }
+
     aside p:nth-child(2),
     aside address {
         font-size: 1rem;
     }
+
     aside address {
         font-size: 1.2rem;
         margin-top: 0.5rem;
     }
+
     .project-highlights p:first-child,
     .project-highlights p:nth-child(2) {
-    text-align: left;
+        text-align: left;
     }
 
     nav ul {
         margin-top: 0.5rem;
         font-size: 1rem;
     }
+
     nav ul li {
         display: inline;
         margin: 0.4rem 0;
         padding: 0.5rem;
     }
+
     .link-separater {
         display: none;
     }
+
     .bachelor-education aside:nth-child(1) p:first-child {
         font-size: 1rem;
         margin-top: 0.5rem;
     }
+
+    .bachelor-education aside:nth-child(1) p:nth-child(2) {
+        font-size: 0.95rem;
+        margin-top: 0.2rem;
+        font-style: italic;
+        text-align: center;
+    }
+
+    aside .education aside p {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .bachelor-education .bachelor-degree,
+    .associate-education .associate-degree {
+        display: row;
+        flex-direction: row;
+        gap: 0.1rem;
+        margin-top: 1rem;
+    }
+
+    .bachelor-education .bachelor-degree .degree-info p:first-child,
+    .associate-education .associate-degree .degree-info p:first-child {
+        font-size: 1rem;
+        margin-top: 0;
+    }
+
+    .bachelor-education .bachelor-degree .degree-date,
+    .associate-education .associate-degree .degree-date {
+        font-size: 0.95rem;
+        margin-top: 0rem;
+        /* align-self: flex-end; */
+    }
+
+    /* Reset margins for tighter mobile spacing in education */
+    .education aside p,
+    .education .degree-info p {
+        margin-top: 0.1rem;
+    }
+
+    .education .bachelor-degree .degree-info p:first-child,
+    .education .associate-degree .degree-info p:first-child {
+        margin-top: 0;
+    }
+
+    .professional-summary,
+    .education,
+    .certifications,
+    section.technical-skills,
+    section.experience,
+    .project-highlights {
+        padding: 0.75rem;
+    }
+
+    .hr-line {
+        margin-bottom: 0.6rem;
+        height: 0.15rem;
+    }
+
+    /* Stack asides vertically for narrow screens */
+    .certifications .certification-list aside,
+    section.experience aside,
+    .project-highlights .crc-project aside,
+    .project-highlights .daily-learning-journal-project aside,
+    .project-highlights .tattoos-by-eder-project aside {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        /* gap: 0.25rem; */
+    }
+
+    .education aside {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .education aside.education-aside p:first-child {
+        align-self: center;
+        font-size: 1.2rem;
+    }
+
+    .experience .experience-item {
+        padding-left: 0;
+    }
+
+    .certifications .certification-list aside {
+        display: flex;
+        flex-direction: row;
+        font-size: 1rem;
+        margin: 0;
+        font-weight: normal;
+        padding-bottom: 0.5rem;
+    }
+
+    .certifications .certification-list aside:last-child {
+        padding-bottom: 0;
+    }
+
+    .certifications .certification-list aside p {
+        font-size: 0.95rem;
+        margin-top: 0.3rem;
+    }
+
+    section.experience .experience-item ul,
+    .project-highlights .crc-project ul,
+    .project-highlights .daily-learning-journal-project ul,
+    .project-highlights .tattoos-by-eder-project ul {
+        padding-left: 1rem;
+    }
+
+    /* Tweak link sizes for touch targets */
+    nav ul li a {
+        font-size: 1rem;
+    }
+
+    /* Header content: ensure clean wrapping and sizing */
+    .resume-header .about-content {
+        padding: 0 0.75rem;
+    }
+
+    .resume-header .about-content p {
+        line-height: 1.3rem;
+        overflow-wrap: anywhere;
+        word-break: break-word;
+        hyphens: auto;
+        white-space: normal;
+    }
+
+    .resume-header .about-content .tagline {
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+
+    .resume-header .about-content .veteran-preferences {
+        font-size: 1.1rem;
+    }
+
+    /* Techstack lines readability */
+    .project-highlights .daily-learning-journal-project aside.daily-learning-journal-techstack p,
+    .project-highlights .tattoos-by-eder-project aside.tattoos-by-eder-techstack p {
+        font-size: 0.9rem;
+    }
+
+    /* Project URLs: place on their own line and allow wrapping */
+    .project-highlights .crc-project aside p a,
+    .project-highlights .daily-learning-journal-project aside p a,
+    .project-highlights .tattoos-by-eder-project aside p a {
+        display: block;
+        margin-top: 0.25rem;
+        overflow-wrap: anywhere;
+        word-break: break-word;
+        line-height: 1.3rem;
+    }
+
+    /* Visitor count: bottom center, full width, mobile friendly */
+    section.visitor-count-container {
+        left: 50%;
+        right: auto;
+        bottom: 1.2rem;
+        top: auto;
+        transform: translateX(-50%);
+        width: 56vw;
+        max-width: 99vw;
+        border-radius: 0.8rem;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.10);
+        padding: 0.5rem 0.2rem 0.2rem 0.2rem;
+    }
+
+    /* Footer */
+    footer.resume-footer {
+        font-size: 0.8rem;
+        padding: 2rem 0.5rem 9rem 0.5rem;
+    }
+}
+
+/* -------------------------- */
+
+@media (min-width: 1301px) {
+    .resume-header h1 {
+        font-size: 3rem;
+    }
+
+    .resume-container {
+        width: 60%;
+        margin: 4% auto;
+        padding: 1rem;
+        border-width: 0.1rem;
+    }
+
+    section.education,
+    section.experience,
+    section.project-highlights {
+        margin-top: 0;
+    }
+
+    .education .education-address {
+        text-align: right;
+        width: 100%;
+        display: block;
+    }
+
+    aside p:first-child {
+        font-size: 1.2rem;
+    }
+
+    aside p:nth-child(2),
+    aside address {
+        font-size: 1rem;
+    }
+
+    aside address {
+        font-size: 1.2rem;
+        margin-top: 0.5rem;
+    }
+
+    .project-highlights p:first-child,
+    .project-highlights p:nth-child(2) {
+        text-align: left;
+    }
+
+    nav ul {
+        margin-top: 0.5rem;
+        font-size: 1rem;
+    }
+
+    nav ul li {
+        display: inline;
+        margin: 0.4rem 0;
+        padding: 0.5rem;
+    }
+
+    .link-separater {
+        display: none;
+    }
+
+    .bachelor-education aside:nth-child(1) p:first-child {
+        font-size: 1rem;
+        margin-top: 0.5rem;
+    }
+
     .bachelor-education aside:nth-child(1) p:nth-child(2) {
         font-size: 0.95rem;
         margin-top: 0.2rem;
@@ -1222,7 +1565,7 @@ section.visitor-count-section aside .visitor-label {
         flex-direction: row;
         justify-content: flex-center;
         gap: 0.1rem;
-        margin-top: 1rem;
+        margin-top: 0.5rem;
     }
 
     .bachelor-education .bachelor-degree .degree-info p:first-child,
@@ -1230,21 +1573,25 @@ section.visitor-count-section aside .visitor-label {
         font-size: 1rem;
         margin-top: 0;
     }
+
     .bachelor-education .bachelor-degree .degree-date,
     .associate-education .associate-degree .degree-date {
         font-size: 0.95rem;
         margin-top: 0rem;
         /* align-self: flex-end; */
     }
+
     /* Reset margins for tighter mobile spacing in education */
     .education aside p,
     .education .degree-info p {
         margin-top: 0.1rem;
     }
+
     .education .bachelor-degree .degree-info p:first-child,
     .education .associate-degree .degree-info p:first-child {
         margin-top: 0;
     }
+
     .professional-summary,
     .education,
     .certifications,
@@ -1253,25 +1600,24 @@ section.visitor-count-section aside .visitor-label {
     .project-highlights {
         padding: 0.75rem;
     }
+
     .hr-line {
         margin-bottom: 0.6rem;
         height: 0.15rem;
     }
+
     /* Stack asides vertically for narrow screens */
-    .education aside,
-    .certifications .certification-list aside,
-    section.experience aside,
-    .project-highlights .crc-project aside,
-    .project-highlights .daily-learning-journal-project aside,
-    .project-highlights .tattoos-by-eder-project aside {
+    .education aside {
         flex-direction: column;
         align-items: flex-start;
         /* gap: 0.25rem; */
     }
+
     .education aside.education-aside p:first-child {
         align-self: center;
         font-size: 1.2rem;
     }
+
     .experience .experience-item {
         padding-left: 0;
     }
@@ -1284,9 +1630,11 @@ section.visitor-count-section aside .visitor-label {
         font-weight: normal;
         padding-bottom: 0.5rem;
     }
-    .certifications .certification-list aside:last-child{
+
+    .certifications .certification-list aside:last-child {
         padding-bottom: 0;
     }
+
     .certifications .certification-list aside p {
         font-size: 0.95rem;
         margin-top: 0.3rem;
@@ -1298,14 +1646,17 @@ section.visitor-count-section aside .visitor-label {
     .project-highlights .tattoos-by-eder-project ul {
         padding-left: 1rem;
     }
+
     /* Tweak link sizes for touch targets */
     nav ul li a {
         font-size: 1rem;
     }
+
     /* Header content: ensure clean wrapping and sizing */
     .resume-header .about-content {
         padding: 0 0.75rem;
     }
+
     .resume-header .about-content p {
         line-height: 1.3rem;
         overflow-wrap: anywhere;
@@ -1313,18 +1664,22 @@ section.visitor-count-section aside .visitor-label {
         hyphens: auto;
         white-space: normal;
     }
+
     .resume-header .about-content .tagline {
         font-size: 1.5rem;
         font-weight: 600;
     }
+
     .resume-header .about-content .veteran-preferences {
         font-size: 1.1rem;
     }
+
     /* Techstack lines readability */
     .project-highlights .daily-learning-journal-project aside.daily-learning-journal-techstack p,
     .project-highlights .tattoos-by-eder-project aside.tattoos-by-eder-techstack p {
         font-size: 0.9rem;
     }
+
     /* Project URLs: place on their own line and allow wrapping */
     .project-highlights .crc-project aside p a,
     .project-highlights .daily-learning-journal-project aside p a,
@@ -1335,22 +1690,32 @@ section.visitor-count-section aside .visitor-label {
         word-break: break-word;
         line-height: 1.3rem;
     }
+
     /* Visitor count: bottom center, full width, mobile friendly */
     section.visitor-count-container {
-        left: 50%;
+        left: 90.5%;
         right: auto;
-        bottom: 1.2rem;
+        bottom: 40%;
         top: auto;
         transform: translateX(-50%);
-        width: 95vw;
+        width: 15vw;
         max-width: 99vw;
         border-radius: 0.8rem;
-        box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.10);
         padding: 0.5rem 0.2rem 0.2rem 0.2rem;
     }
-     /* Footer */
+
+    /* Footer */
     footer.resume-footer {
         font-size: 0.8rem;
-        padding: 2rem 0.5rem 9rem 0.5rem;
-}
+        padding: 2rem 0.5rem 2rem 0.5rem;
+    }
+
+    .resume-footer .author-title {
+        font-size: 1.2rem;
+    }
+
+    .resume-footer .author-title span {
+        font-size: 2rem;
+    }
 }
