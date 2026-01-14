@@ -635,7 +635,7 @@ section.visitor-count-section aside .visitor-label {
         font-size: 0.95rem;
         margin: 0;
         font-style: italic;
-        font-weight: normal;
+        font-weight: bold;
     }
 
     .bachelor-education .bachelor-degree .degree-info p:first-child,
@@ -742,13 +742,12 @@ section.visitor-count-section aside .visitor-label {
         box-shadow: 0 2px 8px rgba(0,0,0,0.10);
         padding: 0.5rem 0.2rem 0.2rem 0.2rem;
     }
-    /* Force right alignment for degree-field (Software Development) on mobile */
-    .degree-field {
-        text-align: right !important;
-        width: 100%;
-        display: block;
-        font-weight: normal !important;
-    }
+
+     /* Footer */
+    footer.resume-footer {
+        font-size: 0.8rem;
+        padding: 2rem 0.5rem 9rem 0.5rem;
+}
 }
 
 @media (min-width: 600px) and (max-width: 900px) {
