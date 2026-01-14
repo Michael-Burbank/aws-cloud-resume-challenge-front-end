@@ -234,6 +234,7 @@ nav ul li a {
     font-size: 1rem;
     margin-top: 0.3rem;
     font-weight: bold;
+    font-style: italic;
 }
 
 
@@ -634,8 +635,6 @@ section.visitor-count-section aside .visitor-label {
     .certifications .certification-list aside p {
         font-size: 0.95rem;
         margin: 0;
-        font-style: italic;
-        font-weight: bold;
     }
 
     .bachelor-education .bachelor-degree .degree-info p:first-child,
@@ -850,6 +849,21 @@ section.visitor-count-section aside .visitor-label {
     .experience .experience-item {
         padding-left: 0;
     }
+
+    .certifications .certification-list aside {
+        font-size: 1rem;
+        margin: 0;
+        font-weight: normal;
+        padding-bottom: 0.5rem;
+    }
+    .certifications .certification-list aside:last-child{
+        padding-bottom: 0;
+    }
+    .certifications .certification-list aside p {
+        font-size: 0.95rem;
+        margin: 0;
+    }
+
     section.experience .experience-item ul,
     .project-highlights .crc-project ul,
     .project-highlights .daily-learning-journal-project ul,
@@ -906,11 +920,9 @@ section.visitor-count-section aside .visitor-label {
         box-shadow: 0 2px 8px rgba(0,0,0,0.10);
         padding: 0.5rem 0.2rem 0.2rem 0.2rem;
     }
-    /* Force right alignment for degree-field (Software Development) on mobile */
-    .degree-field {
-        text-align: right !important;
-        width: 100%;
-        display: block;
-        font-weight: normal !important;
-    }
+     /* Footer */
+    footer.resume-footer {
+        font-size: 0.8rem;
+        padding: 2rem 0.5rem 9rem 0.5rem;
+}
 }
