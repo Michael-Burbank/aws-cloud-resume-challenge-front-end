@@ -1,6 +1,3 @@
-// Import API endpoint from config.js.
-import { API_PROD_ENDPOINT } from './config.js';
-
 document.addEventListener("DOMContentLoaded", function () {
     const countPlaceholder = document.getElementById('visitor-count-placeholder');
     if (!countPlaceholder) {
@@ -8,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
         return;
     }
 // Fetch visitor count from the API endpoint.
-    fetch(API_PROD_ENDPOINT, { method: 'POST', cache: 'no-store' })
+    fetch("https://klheh60z06.execute-api.us-west-1.amazonaws.com/Prod/visitors", { method: 'POST', cache: 'no-store' })
         .then((response) => {
             if (!response.ok) throw new Error(`HTTP ${response.status}`);
             return response.json();
