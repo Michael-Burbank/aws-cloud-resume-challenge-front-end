@@ -26,6 +26,3 @@ document.addEventListener("DOMContentLoaded", function () {
             console.error('Error fetching visitor count:', error);
         });
 });
-
-
-
