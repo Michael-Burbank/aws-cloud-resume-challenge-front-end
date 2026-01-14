@@ -1153,3 +1153,204 @@ section.visitor-count-section aside .visitor-label {
         padding: 2rem 0.5rem 9rem 0.5rem;
 }
 }
+
+@media (min-width: 1101px) and (max-width: 1300px) {
+    .resume-header h1 {
+        font-size: 3rem;
+    }
+    .resume-container {
+        width: 80%;
+        margin: 4% auto;
+        padding: 1rem;
+        border-width: 0.1rem;
+    }
+    section.education, section.experience, section.project-highlights{
+        margin-top: 0;
+    }
+    .education .education-address {
+        text-align: right;
+        width: 100%;
+        display: block;
+    }
+    aside p:first-child {
+        font-size: 1.2rem;
+    }
+    aside p:nth-child(2),
+    aside address {
+        font-size: 1rem;
+    }
+    aside address {
+        font-size: 1.2rem;
+        margin-top: 0.5rem;
+    }
+    .project-highlights p:first-child,
+    .project-highlights p:nth-child(2) {
+    text-align: left;
+    }
+
+    nav ul {
+        margin-top: 0.5rem;
+        font-size: 1rem;
+    }
+    nav ul li {
+        display: inline;
+        margin: 0.4rem 0;
+        padding: 0.5rem;
+    }
+    .link-separater {
+        display: none;
+    }
+    .bachelor-education aside:nth-child(1) p:first-child {
+        font-size: 1rem;
+        margin-top: 0.5rem;
+    }
+    .bachelor-education aside:nth-child(1) p:nth-child(2) {
+        font-size: 0.95rem;
+        margin-top: 0.2rem;
+        font-style: italic;
+        text-align: center;
+    }
+
+    aside .education aside p {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .bachelor-education .bachelor-degree,
+    .associate-education .associate-degree {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-center;
+        gap: 0.1rem;
+        margin-top: 1rem;
+    }
+
+    .bachelor-education .bachelor-degree .degree-info p:first-child,
+    .associate-education .associate-degree .degree-info p:first-child {
+        font-size: 1rem;
+        margin-top: 0;
+    }
+    .bachelor-education .bachelor-degree .degree-date,
+    .associate-education .associate-degree .degree-date {
+        font-size: 0.95rem;
+        margin-top: 0rem;
+        /* align-self: flex-end; */
+    }
+    /* Reset margins for tighter mobile spacing in education */
+    .education aside p,
+    .education .degree-info p {
+        margin-top: 0.1rem;
+    }
+    .education .bachelor-degree .degree-info p:first-child,
+    .education .associate-degree .degree-info p:first-child {
+        margin-top: 0;
+    }
+    .professional-summary,
+    .education,
+    .certifications,
+    section.technical-skills,
+    section.experience,
+    .project-highlights {
+        padding: 0.75rem;
+    }
+    .hr-line {
+        margin-bottom: 0.6rem;
+        height: 0.15rem;
+    }
+    /* Stack asides vertically for narrow screens */
+    .education aside,
+    .certifications .certification-list aside,
+    section.experience aside,
+    .project-highlights .crc-project aside,
+    .project-highlights .daily-learning-journal-project aside,
+    .project-highlights .tattoos-by-eder-project aside {
+        flex-direction: column;
+        align-items: flex-start;
+        /* gap: 0.25rem; */
+    }
+    .education aside.education-aside p:first-child {
+        align-self: center;
+        font-size: 1.2rem;
+    }
+    .experience .experience-item {
+        padding-left: 0;
+    }
+
+    .certifications .certification-list aside {
+        display: flex;
+        flex-direction: row;
+        font-size: 1rem;
+        margin: 0;
+        font-weight: normal;
+        padding-bottom: 0.5rem;
+    }
+    .certifications .certification-list aside:last-child{
+        padding-bottom: 0;
+    }
+    .certifications .certification-list aside p {
+        font-size: 0.95rem;
+        margin-top: 0.3rem;
+    }
+
+    section.experience .experience-item ul,
+    .project-highlights .crc-project ul,
+    .project-highlights .daily-learning-journal-project ul,
+    .project-highlights .tattoos-by-eder-project ul {
+        padding-left: 1rem;
+    }
+    /* Tweak link sizes for touch targets */
+    nav ul li a {
+        font-size: 1rem;
+    }
+    /* Header content: ensure clean wrapping and sizing */
+    .resume-header .about-content {
+        padding: 0 0.75rem;
+    }
+    .resume-header .about-content p {
+        line-height: 1.3rem;
+        overflow-wrap: anywhere;
+        word-break: break-word;
+        hyphens: auto;
+        white-space: normal;
+    }
+    .resume-header .about-content .tagline {
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+    .resume-header .about-content .veteran-preferences {
+        font-size: 1.1rem;
+    }
+    /* Techstack lines readability */
+    .project-highlights .daily-learning-journal-project aside.daily-learning-journal-techstack p,
+    .project-highlights .tattoos-by-eder-project aside.tattoos-by-eder-techstack p {
+        font-size: 0.9rem;
+    }
+    /* Project URLs: place on their own line and allow wrapping */
+    .project-highlights .crc-project aside p a,
+    .project-highlights .daily-learning-journal-project aside p a,
+    .project-highlights .tattoos-by-eder-project aside p a {
+        display: block;
+        margin-top: 0.25rem;
+        overflow-wrap: anywhere;
+        word-break: break-word;
+        line-height: 1.3rem;
+    }
+    /* Visitor count: bottom center, full width, mobile friendly */
+    section.visitor-count-container {
+        left: 50%;
+        right: auto;
+        bottom: 1.2rem;
+        top: auto;
+        transform: translateX(-50%);
+        width: 95vw;
+        max-width: 99vw;
+        border-radius: 0.8rem;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+        padding: 0.5rem 0.2rem 0.2rem 0.2rem;
+    }
+     /* Footer */
+    footer.resume-footer {
+        font-size: 0.8rem;
+        padding: 2rem 0.5rem 9rem 0.5rem;
+}
+}
