@@ -416,9 +416,10 @@ section.project-highlights .crc-project ul {
     justify-content: space-between;
 }
 
-.project-highlights .daily-learning-journal-project aside:nth-child(2) {
+.project-highlights .daily-learning-journal-project aside:nth-child(2) {   margin-top: 0;
+    padding-top: 0.5rem;
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
 }
 
 .project-highlights .daily-learning-journal-project aside.daily-learning-journal-techstack p {
