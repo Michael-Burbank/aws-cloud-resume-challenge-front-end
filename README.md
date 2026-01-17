@@ -10,7 +10,7 @@
 
 ### HTML ✅
 
-### CSS
+### CSS ✅
 
 ### Static Website ✅
 
@@ -18,21 +18,7 @@
 
 ### DNS ✅
 
-### JavaScript
-
-### Database ✅
-
-### API ✅
-
-### Python ✅
-
-### Tests ✅
-
-### IaC (AWS SAM / Terraform) ✅
-
-### Source Control ✅
-
-### CI/CD (Back end) ✅
+### JavaScript ✅
 
 ### CI/CD (Front end) 
 
