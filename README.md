@@ -8,7 +8,7 @@
 
 ### Certification ✅
 
-### HTML
+### HTML ✅
 
 ### CSS
 
@@ -20,20 +20,20 @@
 
 ### JavaScript
 
-### Database
+### Database ✅
 
-### API
+### API ✅
 
-### Python
+### Python ✅
 
-### Tests
+### Tests ✅
 
-### IaC (AWS SAM / Terraform)
+### IaC (AWS SAM / Terraform) ✅
 
-### Source Control
+### Source Control ✅
 
-### CI/CD (Back end)
+### CI/CD (Back end) ✅
 
-### CI/CD (Front end) ✅
+### CI/CD (Front end) 
 
 ### Blog Post
