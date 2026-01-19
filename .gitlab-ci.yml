@@ -3,6 +3,7 @@ stages:
   - deploy
 
 deploy_to_production:
+  image: python:3.12
   stage: deploy
   script:
     - set -e
