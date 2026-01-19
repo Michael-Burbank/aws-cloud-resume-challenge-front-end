@@ -1,0 +1,27 @@
+# Include security templates
+include:
+  - template: Security/SAST.gitlab-ci.yml
+  - template: Security/Secret-Detection.gitlab-ci.yml
+
+stages:
+  - deploy
+
+deploy_to_production:
+  stage: deploy
+  script:
+    - set -e
+    - echo "Checking out code..."
+    - echo "Configuring AWS credentials..."
+    - export AWS_ACCESS_KEY_ID=$AWS_ACCESS_KEY_ID
+    - export AWS_SECRET_ACCESS_KEY=$AWS_SECRET_ACCESS_KEY
+    - export AWS_DEFAULT_REGION=$AWS_DEFAULT_REGION
+    - echo "Syncing files to S3 bucket..."
+    - aws s3 sync ./website s3://$S3_BUCKET_NAME --delete --exclude "*" --include "website/*.html" --include "website/assets/css/*.css" --include "website/assets/js/script.js"
+    - echo "Deploying to production server..."
+    - |
+      echo "Website URL: http://${S3_BUCKET_NAME}.s3-website-${AWS_DEFAULT_REGION}.amazonaws.com"
+    - echo "Invalidating CloudFront Distribution..."
+    - aws cloudfront create-invalidation --distribution-id $CLOUDFRONT_DISTRIBUTION_ID --paths "/*"
+  rules:
+    - if: '$CI_COMMIT_BRANCH == "main"'
+      when: always
