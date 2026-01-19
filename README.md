@@ -2,7 +2,7 @@
 
 --------------------
 
-## Steps
+## Front-End Steps
 
 --------------------
 
@@ -20,6 +20,6 @@
 
 ### JavaScript ✅
 
-### CI/CD (Front end) 
+### CI/CD (Front end) ✅
 
 ### Blog Post
