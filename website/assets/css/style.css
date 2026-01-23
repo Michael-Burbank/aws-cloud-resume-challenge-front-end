@@ -400,6 +400,12 @@ section.project-highlights .crc-project ul {
     margin-top: 0.5rem;
 }
 
+.project-highlights .crc-project ul li a {
+    color: var(--header-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+
 
 /* END CRC */
 
