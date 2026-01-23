@@ -22,4 +22,4 @@
 
 ### CI/CD (Front end) ✅
 
-### Blog Post
+### Blog Post ✅
