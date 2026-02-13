@@ -275,6 +275,20 @@ section.technical-skills ul li {
 
 /* EXPERIENCE */
 
+#coming-soon {
+    font-size: 1.5rem;
+    font-style: italic;
+    font-weight: normal;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    margin: auto;
+    color: var(--header-color);
+    font-family: var(--header-font);
+
+}
+
 section.experience {
     margin-top: 0.5rem;
     padding: 1rem 1rem 0 1rem;
@@ -296,24 +310,6 @@ section.experience aside p {
     margin-top: 0;
     font-size: 1rem;
     color: var(--text-color);
-}
-
-section.experience aside.tattoos-by-eder p:first-child {
-    font-weight: bold;
-    /* color: var(--secondary-font-color); */
-}
-
-section.experience aside.tattoos-by-eder p:nth-child(2) {
-    font-weight: bold;
-}
-
-section.experience aside.tattoos-by-eder-role p {
-    font-weight: normal;
-}
-
-section.experience aside.tattoos-by-eder-role p:first-child {
-    font-weight: normal;
-    /* font-style: italic; */
 }
 
 section.experience .experience-item,
@@ -338,6 +334,35 @@ section.experience .experience-item ul li {
 }
 
 .independent-software-consultant .company-role p {
+    font-weight: normal;
+}
+
+.arizona-cloud-systems-administrator .company-name p {
+    font-weight: bold;
+}
+
+.arizona-cloud-systems-administrator .company-role p {
+    font-weight: normal;
+}
+
+.arizona-cloud-systems-administrator .experience-item {
+    padding-left: 0;
+}
+
+.arizona-cloud-systems-administrator .experience-item ul {
+    padding-left: 0;
+}
+
+.arizona-cloud-systems-administrator .experience-item .az-state-coming-soon {
+    text-align: center;
+    list-style-type: none;
+}
+
+.tattoos-by-eder .company-name p {
+    font-weight: bold;
+}
+
+.tattoos-by-eder .company-role p {
     font-weight: normal;
 }
 
@@ -422,7 +447,8 @@ section.project-highlights .crc-project ul {
     justify-content: space-between;
 }
 
-.project-highlights .daily-learning-journal-project aside:nth-child(2) {   margin-top: 0;
+.project-highlights .daily-learning-journal-project aside:nth-child(2) {
+    margin-top: 0;
     padding-top: 0.5rem;
     display: flex;
     justify-content: space-between;
@@ -1726,4 +1752,18 @@ footer.resume-footer {
     .resume-footer .author-title span {
         font-size: 2rem;
     }
+}
+
+section.experience.arizona-cloud-systems-administrator .experience-item {
+    padding-left: 0;
+}
+
+section.experience.arizona-cloud-systems-administrator .experience-item ul {
+    padding-left: 0;
+    margin-left: 0;
+}
+
+section.experience.arizona-cloud-systems-administrator .experience-item .az-state-coming-soon {
+    text-align: center;
+    list-style-type: none;
 }
