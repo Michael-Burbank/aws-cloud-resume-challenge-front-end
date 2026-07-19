@@ -345,19 +345,6 @@ section.experience .experience-item ul li {
     font-weight: normal;
 }
 
-.arizona-cloud-systems-administrator .experience-item {
-    padding-left: 0;
-}
-
-.arizona-cloud-systems-administrator .experience-item ul {
-    padding-left: 0;
-}
-
-.arizona-cloud-systems-administrator .experience-item .az-state-coming-soon {
-    text-align: center;
-    list-style-type: none;
-}
-
 .tattoos-by-eder .company-name p {
     font-weight: bold;
 }
@@ -1225,7 +1212,7 @@ footer.resume-footer {
     }
 
     .resume-header .about-content p {
-        line-height: 1.3rem;
+        line-height: 1.5rem;
         overflow-wrap: anywhere;
         word-break: break-word;
         hyphens: auto;
@@ -1692,7 +1679,7 @@ footer.resume-footer {
     }
 
     .resume-header .about-content p {
-        line-height: 1.3rem;
+        /* line-height: 1.3rem; */
         overflow-wrap: anywhere;
         word-break: break-word;
         hyphens: auto;
@@ -1752,18 +1739,4 @@ footer.resume-footer {
     .resume-footer .author-title span {
         font-size: 2rem;
     }
-}
-
-section.experience.arizona-cloud-systems-administrator .experience-item {
-    padding-left: 0;
-}
-
-section.experience.arizona-cloud-systems-administrator .experience-item ul {
-    padding-left: 0;
-    margin-left: 0;
-}
-
-section.experience.arizona-cloud-systems-administrator .experience-item .az-state-coming-soon {
-    text-align: center;
-    list-style-type: none;
 }
